@@ -6,7 +6,7 @@ import googleMaps from './components/google_maps'
 import contactForm from './components/contact_form'
 
 navigationOffCanvas();
-transparentHeader();
+transparentHeader(); 
 youtubeVideo();
 
 if ( location.pathname.includes('contacto') ) {

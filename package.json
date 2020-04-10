@@ -17,7 +17,7 @@
     "serve": "browser-sync start --server --files public --serveStatic public --reload-delay=300 --reload-debounce=500",
     "proxy": "browser-sync start --proxy localhost --files public --directory --startPath / --serveStatic / --reload-delay=300 --reload-debounce=500",
     "metalangs": "parallelshell \"npm run sass\" \"npm run pug\" \"npm run watchify\"",
-    "devserve": "parallelshell \"npm run metalangs\" \"nm run serve\"",
+    "devserve": "parallelshell \"npm run metalangs\" \"npm run serve\"",
     "devproxy": "parallelshell \"npm run metalangs\" \"npm run proxy\"",
     "imagemin": "imagemin \"./src/img/**.+(jpg|png)\" -o ./public/img/ -p=pngquant -p=jpeg-recompress",
     "webp": "imagemin \"./public/img/**.jpg\" -o ./public/img/ -p=webp",
